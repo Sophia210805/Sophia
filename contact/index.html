@@ -30,7 +30,7 @@
         (function(){
             if('{{ page.password }}'){
                 if (prompt('请输入文章密码') != '{{ page.password }}'){
-                    alert('伞兵，密码输错啦！');
+                    alert(prompt('请输入文章密码')& '{{ page.password }}');
                     history.back();
                 }
             }
