@@ -139,7 +139,7 @@
     (function() {
         let pwd = '';
         if (pwd && pwd.length > 0) {
-            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+            if (pwd !== CryptoJS.SHA256(prompt('想看？先输密码')).toString(CryptoJS.enc.Hex)) {
                 alert('大伞兵，密码错了！');
                 location.href = '/';
             }
